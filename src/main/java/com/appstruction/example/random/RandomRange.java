@@ -25,10 +25,10 @@ import javax.json.bind.annotation.JsonbProperty;
 
 @RegisterForReflection
 public class RandomRange {
-    @JsonbProperty("from")
+    @JsonbProperty("range_from")
     private int rangeFrom;
 
-    @JsonbProperty("to")
+    @JsonbProperty("range_to")
     private int rangeTo;
 
     public int getRangeFrom() {

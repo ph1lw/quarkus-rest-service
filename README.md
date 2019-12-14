@@ -6,11 +6,11 @@ This service provides a simple rest api with 3 methods:
     * /rest/v1/hello
         * returns "Hello World".
 * GET helloUser
-    * /rest/v1/hello/{username}
+    * /rest/v1/hello/{name}
         * returns "Hello <UserName>" depending on the username.
 * POST randomNumber
     * /rest/v1/random
-    * expects a random range as json in body, e.g. `{"from": 0, "to": 100}`.
+    * expects a random range as json in body, e.g. `{"range_from": 0, "range_to": 100}`.
         * returns a random value between from and to.
 * GET healthCheck
     * /health/ready
