@@ -2,20 +2,23 @@
 Simple rest service with quarkus 1.0.0 by Philipp Wurm <phiwu@gmx.at>
 
 This service provides a simple rest api with 3 methods:
-* GET hello
-    * /rest/v1/hello
+* hello
+    * GET /rest/v1/hello
         * returns "Hello World".
-* GET helloUser
-    * /rest/v1/hello/{name}
+* helloUser
+    * GET /rest/v1/hello/{name}
         * returns "Hello <UserName>" depending on the username.
-* POST randomNumber
-    * /rest/v1/random
+* randomNumber
+    * POST /rest/v1/random
     * expects a random range as json in body, e.g. `{"range_from": 0, "range_to": 100}`.
         * returns a random value between from and to.
-* GET healthCheck
-    * /health/ready
+* healthCheck
+    * GET /health/ready
         * returns a ready message
-        
+* Swagger-UI
+   * GET /swagger-ui
+      * displays applications rest api in swagger-ui
+    
         
 ### Prerequisites
 * JDK 11+ installed with JAVA_HOME configured appropriately
