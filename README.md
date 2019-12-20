@@ -15,7 +15,10 @@ This service provides a simple rest api with 3 methods:
 * healthCheck
     * GET /health/ready
         * returns a ready message
-        
+* Swagger-UI
+   * GET /swagger-ui
+      * displays applications rest api in swagger-ui
+    
         
 ### Prerequisites
 * JDK 11+ installed with JAVA_HOME configured appropriately
